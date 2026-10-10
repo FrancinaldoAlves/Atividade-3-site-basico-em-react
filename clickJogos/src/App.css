@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.cabecalho {
+  background-color: #1769aa;
+  padding: 20px;
+  border-bottom: 4px solid #0c416e;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.busca label {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.busca input {
+  padding: 8px;
+  border: 1px solid #999;
+}
+
+.menu {
+  background-color: #333;
+}
+
+.menu ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 15px 20px;
+  list-style: none;
+}
+
+.menu li {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.categorias {
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #bbb;
+}
+
+.categorias ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.categorias li {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  color: #1769aa;
+}
+
+.conteudo {
+  margin: 20px;
+}
+
+.titulo {
+  padding: 12px;
+  background-color: #1769aa;
+  border-bottom: 4px solid #0c416e;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lista-jogos {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.card-jogo {
+width: 250px;
+padding: 10px;
+background-color: white;
+border: 1px solid #bbb;
+text-align: center;
+}
+
+.card-jogo img {
+display: block;
+width: 200px;
+height: 150px;
+object-fit: cover;
+margin: 0 auto;
+}
+
+.card-jogo h3 {
+color: #1769aa;
+font-size: 18px;
+text-align: center;
+}
+
+.card-jogo p {
+color: #555;
+font-size: 14px;
+line-height: 1.4;
+text-align: center;
+}
+
+@media (max-width: 600px) {
+  .topo,
+  .menu ul,
+  .categorias ul,
+  .lista-jogos {
+    flex-wrap: wrap;
+  }
+
+  .busca {
+    margin-top: 15px;
+  }
+
+  .card-jogo {
+    width: 100%;
+  }
+}
